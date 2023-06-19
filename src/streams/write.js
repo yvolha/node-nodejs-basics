@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 const baseFile = join(__dirname, 'files', 'fileToWrite.txt');
 
 const write = async () => {
-    process.stdout.write("Please type something to save it in './files/fileToWrite.txt' \n");
+    process.stdout.write("Please type something and press 'Enter' to save it in './files/fileToWrite.txt' \n");
     const writeStream = createWriteStream(baseFile);
 
     process.stdin.pipe(writeStream);
